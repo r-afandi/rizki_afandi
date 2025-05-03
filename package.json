@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-cv",
+  "version": "1.0.0",
+  "description": "A single-page portfolio CV project with a Dracula terminal theme.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "portfolio",
+    "cv",
+    "dracula",
+    "theme"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
