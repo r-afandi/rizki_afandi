@@ -168,6 +168,7 @@ footer .footer-line {
     flex: 1;
     color: #f8f8f2;
     text-align: left;
+    padding: 0 20px;
 }
 
 .about-text h2 {
@@ -179,6 +180,7 @@ footer .footer-line {
     color: #f8f8f2;
     line-height: 1.6;
     text-align: justify;
+    margin: 0 20px; /* Tambahkan margin kiri dan kanan */
 }
 
 .about-photo {
