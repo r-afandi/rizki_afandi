@@ -283,7 +283,10 @@ footer .footer-line {
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    text-align: center; /* Pusatkan teks */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    display: flex; /* Gunakan flexbox untuk memusatkan */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
     cursor: pointer;
     border: none;
     outline: none;
