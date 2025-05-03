@@ -23,24 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
     const accordionItems = document.querySelectorAll('.accordion-item');
 
-accordionItems.forEach(item => {
-  const header = item.querySelector('.accordion-header');
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
 
-  header.addEventListener('click', () => {
-    const isActive = item.classList.contains('active');
+        header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
 
-    // Tutup semua accordion
-    accordionItems.forEach(i => {
-      i.classList.remove('active');
+            accordionItems.forEach(i => i.classList.remove('active'));
+
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
     });
-
-    if (!isActive) {
-      // Buka yang diklik
-      item.classList.add('active');
-    }
-  });
-});
-
 });

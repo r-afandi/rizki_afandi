@@ -14,9 +14,8 @@ header.tech-header {
 
 header .glow-text {
     font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #ff79c6;
+    text-shadow: none;
     padding: 10px;
     border-radius: 5px;
 }
@@ -179,6 +178,7 @@ footer .footer-line {
 .about-text p {
     color: #f8f8f2;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .about-photo {
@@ -187,7 +187,7 @@ footer .footer-line {
 }
 
 .about-photo img {
-    max-width: 45%;
+    max-width: 70%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -326,6 +326,27 @@ footer .footer-line {
 @media (max-width: 768px) {
     .accordion {
         flex-direction: column; /* Mengubah menjadi vertikal di layar kecil */
+    }
+
+    .about-container {
+        flex-direction: column; /* Ubah layout menjadi vertikal */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    .about-photo img {
+        max-width: 70%; /* Sesuaikan ukuran gambar */
+    }
+
+    .accordion {
+        grid-template-columns: 1fr; /* Ubah grid menjadi satu kolom */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Ubah grid menjadi satu kolom */
+    }
+
+    .header .glow-text {
+        font-size: 2rem; /* Perkecil ukuran teks header */
     }
 }
 
